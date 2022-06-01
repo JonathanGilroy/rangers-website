@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplify46efe59159f54-staging-181429-authRole",
+      "UnauthRoleArn": "arn:aws:iam::370153108532:role/amplify-amplify46efe59159f54-staging-181429-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::370153108532:role/amplify-amplify46efe59159f54-staging-181429-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-amplify46efe59159f54-staging-181429-deployment",
+      "UnauthRoleName": "amplify-amplify46efe59159f54-staging-181429-unauthRole",
+      "StackName": "amplify-amplify46efe59159f54-staging-181429",
+      "StackId": "arn:aws:cloudformation:us-east-1:370153108532:stack/amplify-amplify46efe59159f54-staging-181429/5a7261c0-db8d-11ec-98c7-0ec9834f7a0f",
+      "AmplifyAppId": "dhmzd5xsw5ny6"
+    },
+    "categories": {
+      "auth": {
+        "rangerswebsitea4926aff": {}
+      }
+    }
+  }
+}

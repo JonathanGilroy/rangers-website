@@ -1,5 +1,7 @@
+import React from 'react';
 import logo from './rangers-logo.jpg';
 import './App.css';
+// import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
 
 function App() {
   return (
@@ -9,8 +11,10 @@ function App() {
         <br />
         <p>Blood, sweat and beers coming soon!</p>
       </header>
+      {/* <AmplifySignOut /> */}
     </div>
   );
 }
 
+// export default withAuthenticator(App);
 export default App;
