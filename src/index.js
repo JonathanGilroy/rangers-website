@@ -15,14 +15,16 @@ import Home from './components/Home/Home';
 ReactDOM.render(
   <div className="page-container">
     <Router>
-      <div className="content-wrap" style={{
-        backgroundImage: 'url(/wallpaper.jpg)',
+      <div className="content-wrap"
+      style={{
+        // backgroundImage: 'url(/wallpaper.jpg)',
+        backgroundImage: 'linear-gradient(to right, red, blue)',
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
-        width: '100vw',
-        height: '100vh',
-        // filter: 'brightness(70%)'
+        // width: '100vw',
+        // height: '100vh',
+        // filter: 'brightness(70%)',
       }}>
         <Navigation />
         <Routes>

@@ -1,0 +1,9 @@
+.InstagramIcon {
+    background-image: linear-gradient(to bottom right, red, blue);
+    border-radius: 6px;
+}
+
+.TwitterIcon {
+    background-color: #1E90FF;
+    border-radius: 6px;
+}
