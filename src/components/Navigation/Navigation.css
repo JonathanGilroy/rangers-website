@@ -1,9 +1,20 @@
-.InstagramIcon {
+/* .InstagramIcon {
     background-image: linear-gradient(to bottom right, red, blue);
     border-radius: 6px;
-}
+    color: linear-gradient(to bottom right, red, blue);
+} */
 
-.TwitterIcon {
+/* .TwitterIcon {
     background-color: #1E90FF;
     border-radius: 6px;
+} */
+
+.Logo {
+    display: block;
+}
+
+@media only screen and (max-width: 400px) {
+    .Logo {
+      display: none;
+    }
 }

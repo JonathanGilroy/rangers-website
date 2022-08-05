@@ -1,6 +1,7 @@
 import React from 'react';
 import './Home.css';
 import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
 
 function Home() {
     return (
@@ -9,7 +10,7 @@ function Home() {
             alignItems="center"
             justifyContent="center">
             <Box sx={{
-                width: '60%',
+                width: '50%',
                 height: '100%',
                 minHeight: '100vh',
                 backgroundColor: 'white',

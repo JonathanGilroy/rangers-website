@@ -18,7 +18,7 @@ ReactDOM.render(
       <div className="content-wrap"
       style={{
         // backgroundImage: 'url(/wallpaper.jpg)',
-        backgroundImage: 'linear-gradient(to right, red, blue)',
+        backgroundImage: 'linear-gradient(to right, #8B0000, #000080)',
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
