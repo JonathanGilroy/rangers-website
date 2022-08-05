@@ -134,6 +134,11 @@ function Navigation() {
                             </Grid>
                             <Grid item xs={1} container justifyContent="flex-start">
                                 <Typography sx={{ color: "black" }}>
+                                    Gallery
+                                </Typography>
+                            </Grid>
+                            <Grid item xs={1} container justifyContent="flex-start">
+                                <Typography sx={{ color: "black" }}>
                                     Contact
                                 </Typography>
                             </Grid>
