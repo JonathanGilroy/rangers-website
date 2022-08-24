@@ -12,6 +12,8 @@ import {
     Grid,
     Container,
     Button,
+    Menu,
+    MenuItem,
 } from '@mui/material';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -25,13 +27,32 @@ import ReactImage from 'react-image-wrapper';
 const drawerWidth = 240;
 
 function TemporaryDrawer() {
-    const [mobileOpen, setMobileOpen] = React.useState(false);
+    const [mobileOpen, setMobileOpen] = useState(false);
 };
 
 let theme = createTheme();
 theme = responsiveFontSizes(theme);
 
 function Navigation() {
+
+    const [anchorEl, setAnchorEl] = useState(null);
+    const open = Boolean(anchorEl);
+
+    const handleClick = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
+
+    const [anchorElAbout, setAnchorElAbout] = useState(null);
+    const openAbout = Boolean(anchorElAbout);
+
+    const handleClickAbout = (event) => {
+        setAnchorElAbout(event.currentTarget);
+    };
+
+    const handleClose = () => {
+        setAnchorEl(null);
+        setAnchorElAbout(null);
+    };
 
     return (
         <Box sx={{ flexGrow: 1 }}>
@@ -113,34 +134,63 @@ function Navigation() {
                                 </Button>
                             </Grid>
                             <Grid item xs={1} container justifyContent="flex-start">
-                                <Typography sx={{ color: "black", marginLeft: 1 }}>
-                                    Home
-                                </Typography>
+                                {/* sx={{ color: "black", marginLeft: 1 }}> */}
+                                <Button variant="text">Home</Button>
                             </Grid>
                             <Grid item xs={1} container justifyContent="flex-start">
-                                <Typography sx={{ color: "black" }}>
-                                    Fixtures
-                                </Typography>
+                                <Button
+                                    id="basic-button"
+                                    aria-controls={open ? 'basic-menu' : undefined}
+                                    aria-haspopup="true"
+                                    aria-expanded={open ? 'true' : undefined}
+                                    onClick={handleClick}
+                                >
+                                    Events
+                                </Button>
+                                <Menu
+                                    id="basic-menu"
+                                    anchorEl={anchorEl}
+                                    open={open}
+                                    onClose={handleClose}
+                                    MenuListProps={{
+                                        'aria-labelledby': 'basic-button',
+                                    }}
+                                >
+                                    <MenuItem onClick={handleClose}>News</MenuItem>
+                                    <MenuItem onClick={handleClose}>Fixtures</MenuItem>
+                                    <MenuItem onClick={handleClose}>Results</MenuItem>
+                                    <MenuItem onClick={handleClose}>Events</MenuItem>
+                                </Menu>
                             </Grid>
                             <Grid item xs={1} container justifyContent="flex-start">
-                                <Typography sx={{ color: "black" }}>
-                                    News
-                                </Typography>
+                                <Button variant="text">Team</Button>
                             </Grid>
                             <Grid item xs={1} container justifyContent="flex-start">
-                                <Typography sx={{ color: "black" }}>
-                                    Team
-                                </Typography>
+                                <Button
+                                    id="basic-button"
+                                    aria-controls={openAbout ? 'basic-menu' : undefined}
+                                    aria-haspopup="true"
+                                    aria-expanded={openAbout ? 'true' : undefined}
+                                    onClick={handleClickAbout}
+                                >
+                                    About
+                                </Button>
+                                <Menu
+                                    id="basic-menu"
+                                    anchorEl={anchorElAbout}
+                                    open={openAbout}
+                                    onClose={handleClose}
+                                    MenuListProps={{
+                                        'aria-labelledby': 'basic-button',
+                                    }}
+                                >
+                                    <MenuItem onClick={handleClose}>About Us</MenuItem>
+                                    <MenuItem onClick={handleClose}>History</MenuItem>
+                                    <MenuItem onClick={handleClose}>Gallery</MenuItem>
+                                </Menu>
                             </Grid>
                             <Grid item xs={1} container justifyContent="flex-start">
-                                <Typography sx={{ color: "black" }}>
-                                    Gallery
-                                </Typography>
-                            </Grid>
-                            <Grid item xs={1} container justifyContent="flex-start">
-                                <Typography sx={{ color: "black" }}>
-                                    Contact
-                                </Typography>
+                                <Button variant="text">Contact</Button>
                             </Grid>
                         </Grid>
                     </Toolbar>
