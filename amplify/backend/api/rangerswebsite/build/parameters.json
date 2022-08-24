@@ -1,0 +1,7 @@
+{
+    "AppSyncApiName": "rangerswebsite",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "S3DeploymentBucket": "amplify-amplify46efe59159f54-staging-181429-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/47c622cac96835d0e1e88345e6c72100d501a9da"
+}

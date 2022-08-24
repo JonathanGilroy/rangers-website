@@ -1,0 +1,83 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplify46efe59159f54-staging-181429-authRole",
+      "UnauthRoleArn": "arn:aws:iam::370153108532:role/amplify-amplify46efe59159f54-staging-181429-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::370153108532:role/amplify-amplify46efe59159f54-staging-181429-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-amplify46efe59159f54-staging-181429-deployment",
+      "UnauthRoleName": "amplify-amplify46efe59159f54-staging-181429-unauthRole",
+      "StackName": "amplify-amplify46efe59159f54-staging-181429",
+      "StackId": "arn:aws:cloudformation:us-east-1:370153108532:stack/amplify-amplify46efe59159f54-staging-181429/5a7261c0-db8d-11ec-98c7-0ec9834f7a0f",
+      "AmplifyAppId": "dhmzd5xsw5ny6"
+    }
+  },
+  "auth": {
+    "rangerswebsitea4926aff": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplify46efe59159f54-staging-181429-deployment/amplify-cfn-templates/auth/rangerswebsitea4926aff-cloudformation-template.json",
+        "logicalId": "authrangerswebsitea4926aff"
+      },
+      "lastPushTimeStamp": "2022-06-01T10:39:12.040Z",
+      "output": {
+        "UserPoolId": "us-east-1_EETCqHQwX",
+        "AppClientIDWeb": "3e3h8hjgtf1i7qtt8v0kl3fibb",
+        "AppClientID": "16m91ii1dni9p3uqooroq0pk7g",
+        "IdentityPoolId": "us-east-1:928bb8dd-354c-4c1b-8e14-16658a75fbb7",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:370153108532:userpool/us-east-1_EETCqHQwX",
+        "IdentityPoolName": "rangerswebsitea4926aff_identitypool_a4926aff__staging",
+        "UserPoolName": "rangerswebsitea4926aff_userpool_a4926aff"
+      },
+      "lastPushDirHash": "67OwWgO72R/irEHuUXAbYgL03x8="
+    }
+  },
+  "api": {
+    "rangerswebsite": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            }
+          },
+          "additionalAuthenticationProviders": []
+        },
+        "GraphQLAPIIdOutput": "n2zat65ruzgudknxuncjq7nu3q",
+        "GraphQLAPIEndpointOutput": "https://uomjvzgzzrdgvfjkrlgtrsaklm.appsync-api.us-east-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-5e6y3blfcnblpklgmc53jqsqjq"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplify46efe59159f54-staging-181429-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apirangerswebsite"
+      },
+      "lastPushTimeStamp": "2022-06-01T10:39:15.347Z",
+      "lastPushDirHash": "0uDKyJ00TPwAJjhy9MEIzkILwCg="
+    }
+  }
+}
