@@ -8,9 +8,13 @@ import './index.css';
 // Amplify.configure(config);
 // https://stackoverflow.com/questions/70036160/amplifysignout-is-not-exported-from-aws-amplify-ui-react
 
-import App from './components/App/App';
+// import App from './components/App/App';
 import Navigation from './components/Navigation/Navigation';
 import Home from './components/Home/Home';
+import Events from './components/Events/Events';
+import Fixtures from './components/Fixtures/Fixtures';
+import Contact from './components/Contact/Contact';
+import History from './components/History/History';
 
 ReactDOM.render(
   <div className="page-container">
@@ -29,6 +33,10 @@ ReactDOM.render(
         <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/fixtures" element={<Fixtures />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/history" element={<History />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
     </Router>

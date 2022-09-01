@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import './Home.css';
+import './Events.css';
 import Box from '@mui/material/Box';
 
-function Home() {
+function Contact() {
 
     const [state, setState] = useState({
         mobileView: false,
@@ -38,7 +38,7 @@ function Home() {
                     ml:
                         mobileView ? 1 : 2,
                 }}>
-                    <h1>Blood, sweat and beers!</h1>
+                    <h1>Events</h1>
                     <p>We are a ...</p>
                 </Box>
             </>
@@ -87,4 +87,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default Contact;

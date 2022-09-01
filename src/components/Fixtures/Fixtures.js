@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import './Home.css';
+import { Link } from '@mui/material';
+import './Fixtures.css';
 import Box from '@mui/material/Box';
 
-function Home() {
+function Contact() {
 
     const [state, setState] = useState({
         mobileView: false,
@@ -38,8 +39,26 @@ function Home() {
                     ml:
                         mobileView ? 1 : 2,
                 }}>
-                    <h1>Blood, sweat and beers!</h1>
-                    <p>We are a ...</p>
+                    <h1>Fixtures</h1>
+                    <p>We are a currently working to create our own fixtures page. In the mean time, please find the club fixtures on the RFU website below:</p>
+                    <ul>
+                        <li>
+                            <Link
+                                href='https://www.englandrugby.com/fixtures-and-results/search-results?team=22795&season=2022-2023#fixtures'
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                First Team
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                href="https://www.englandrugby.com/fixtures-and-results/search-results?team=22796&season=2022-2023#fixtures"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                Second Team
+                            </Link>
+                        </li>
+                    </ul>
                 </Box>
             </>
         );
@@ -87,4 +106,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default Contact;

@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
 import './Navigation.css';
 import { createTheme, responsiveFontSizes, ThemeProvider } from '@mui/material/styles';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import { Link, BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import {
     AppBar,
     CssBaseline,
@@ -17,6 +16,7 @@ import {
     MenuItem,
     Stack,
 } from '@mui/material';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -31,16 +31,20 @@ const headersData = [
         href: "/",
     },
     {
-        label: "News",
-        href: "/",
+        label: "Fixtures",
+        href: "/fixtures",
     },
     {
-        label: "Fixtures",
-        href: "/",
+        label: "Events",
+        href: "/events",
+    },
+    {
+        label: "History",
+        href: "/history",
     },
     {
         label: "Contact",
-        href: "/",
+        href: "/contact",
     },
 ];
 
@@ -96,10 +100,10 @@ function Navigation() {
             setState((prevState) => ({ ...prevState, drawerOpen: false }));
 
         return (
-            <Toolbar>
+            <Toolbar disableGutters="true">
                 <Typography variant="h5" sx={{
                     color: "#000000",
-                    marginLeft: 1,
+                    marginLeft: 2,
                 }}>
                     Thurston Rangers
                 </Typography>
@@ -116,6 +120,39 @@ function Navigation() {
                         }}
                     >
                         <div>{getDrawerChoices()}</div>
+                        <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+                            <Button href="https://www.facebook.com/Thurston-RUFC-132633373430087" target="_blank" rel="noopener noreferrer"
+                                sx={{
+                                    "& :hover": { color: "black" }
+                                }}>
+                                <FacebookIcon sx={{
+                                    color: "black",
+                                    fontSize: "200%",
+                                }} />
+                            </Button>
+                            <Button href="https://www.instagram.com/thurstonrangers/" target="_blank" rel="noopener noreferrer"
+                                sx={{
+                                    "& :hover": { color: "black" }
+                                }}>
+                                <InstagramIcon
+                                    className="InstagramIcon"
+                                    sx={{
+                                        color: "black",
+                                        fontSize: "200%",
+                                    }} />
+                            </Button>
+                            <Button href="https://twitter.com/thurstonrangers" target="_blank" rel="noopener noreferrer"
+                                sx={{
+                                    "& :hover": { color: "black" }
+                                }}>
+                                <TwitterIcon
+                                    className="TwitterIcon"
+                                    sx={{
+                                        color: "black",
+                                        fontSize: "200%",
+                                    }} />
+                            </Button>
+                        </Box>
                     </Drawer>
                 </Box>
             </Toolbar>
@@ -125,17 +162,17 @@ function Navigation() {
     const getDrawerChoices = () => {
         return headersData.map(({ label, href }) => {
             return (
-                    <Link
-                        {...{
-                            component: Route,
-                            to: href,
-                            color: "inherit",
-                            style: { textDecoration: "none" },
-                            key: label,
-                        }}
-                    >
-                        <MenuItem>{label}</MenuItem>
-                    </Link>
+                <Link
+                    {...{
+                        component: Route,
+                        to: href,
+                        color: "inherit",
+                        style: { textDecoration: "none" },
+                        key: label,
+                    }}
+                >
+                    <MenuItem sx={{ display: 'flex', justifyContent: 'center', color: 'black' }}>{label}</MenuItem>
+                </Link>
             );
         });
     };
@@ -188,8 +225,13 @@ function Navigation() {
                                 }} />
                         </Button>
                     </Grid>
-                    <Button variant="text" sx={{ color: 'black' }}>Home</Button>
-                    <Button
+                    <Link to='/' style={{ textDecoration: 'none' }}>
+                        <Button variant="text" sx={{ color: 'black' }}>Home</Button>
+                    </Link>
+                    <Link to='/fixtures' style={{ textDecoration: 'none' }}>
+                    <Button variant="text" sx={{ color: 'black' }}>Fixtures</Button>
+                    </Link>
+                    {/* <Button
                         id="basic-button"
                         aria-controls={open ? 'basic-menu' : undefined}
                         aria-haspopup="true"
@@ -211,10 +253,14 @@ function Navigation() {
                         <MenuItem onClick={handleClose}>Fixtures</MenuItem>
                         <MenuItem onClick={handleClose}>Results</MenuItem>
                         <MenuItem onClick={handleClose}>Events</MenuItem>
-                    </Menu>
-                    <Button variant="text" sx={{ color: 'black' }}>News</Button>
-                    <Button variant="text" sx={{ color: 'black' }}>Team</Button>
-                    <Button
+                    </Menu> */}
+                    <Link to='/events' style={{ textDecoration: 'none' }}>
+                    <Button variant="text" sx={{ color: 'black' }}>Events</Button>
+                    </Link>
+                    <Link to='/history' style={{ textDecoration: 'none' }}>
+                    <Button variant="text" sx={{ color: 'black' }}>History</Button>
+                    </Link>
+                    {/* <Button
                         id="basic-button"
                         aria-controls={openAbout ? 'basic-menu' : undefined}
                         aria-haspopup="true"
@@ -236,8 +282,10 @@ function Navigation() {
                         <MenuItem onClick={handleClose}>About Us</MenuItem>
                         <MenuItem onClick={handleClose}>History</MenuItem>
                         <MenuItem onClick={handleClose}>Gallery</MenuItem>
-                    </Menu>
-                    <Button variant="text" sx={{ color: 'black' }}>Contact</Button>
+                    </Menu> */}
+                    <Link to='/contact' style={{ textDecoration: 'none' }}>
+                        <Button variant="text" sx={{ color: 'black' }}>Contact</Button>
+                    </Link>
                 </Grid>
             </Toolbar>
         );
