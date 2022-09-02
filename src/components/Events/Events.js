@@ -1,6 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import './Events.css';
 import Box from '@mui/material/Box';
+import {
+    Card,
+    CardContent,
+    CardActionArea,
+    CardMedia,
+    Typography,
+    Grid,
+} from '@mui/material';
+
+const tempEventData = {
+    "socialEvents": [
+        { event: "VP Dinner", date: "03.09.2022", description: "VP Lunches are a great opportunity to get together with your fellow Rangers, enjoy a beer or two and support the team! Book a table at £30 a head for a table of 8.", contact: "thurstonrugbyclub@live.co.uk" },
+        { event: "Ladies Luncheon", date: "24.09.2022", description: "A lunch out for the ladies! Details to follow", contact: "thurstonrugbyclub@live.co.uk" },
+        { event: "VP Dinner", date: "15.10.2022", description: "VP Lunches are a great opportunity to get together with your fellow Rangers, enjoy a beer or two and support the team! Book a table at £30 a head for a table of 8.", contact: "thurstonrugbyclub@live.co.uk" },
+        { event: "VP Dinner", date: "12.11.2022", description: "VP Lunches are a great opportunity to get together with your fellow Rangers, enjoy a beer or two and support the team! Book a table at £30 a head for a table of 8.", contact: "thurstonrugbyclub@live.co.uk" },
+        { event: "VP Dinner", date: "21.01.2023", description: "VP Lunches are a great opportunity to get together with your fellow Rangers, enjoy a beer or two and support the team! Book a table at £30 a head for a table of 8.", contact: "thurstonrugbyclub@live.co.uk" },
+        { event: "VP Dinner", date: "04.03.2023", description: "VP Lunches are a great opportunity to get together with your fellow Rangers, enjoy a beer or two and support the team! Book a table at £30 a head for a table of 8.", contact: "thurstonrugbyclub@live.co.uk" },
+    ]
+};
 
 function Contact() {
 
@@ -38,11 +57,38 @@ function Contact() {
                     ml:
                         mobileView ? 1 : 2,
                 }}>
-                    <h1>Events</h1>
-                    <p>We are a ...</p>
+                    <Typography>
+                        <h1>Events</h1>
+                    </Typography>
+                    <Box sx={{ display: 'flex', flexDirection: 'column' }} alignItems='center'>
+                        {getEventCards()}
+                    </Box>
                 </Box>
             </>
         );
+    };
+
+    const getEventCards = () => {
+        return tempEventData.socialEvents.map(({ event, date, description, contact }) => {
+            return (
+                <Card sx={{ mb: 2, width: '80%' }} elevation={3}>
+                    <CardContent>
+                        <Typography variant='h5'>
+                            {event}
+                        </Typography>
+                        <Typography>
+                            {date}
+                        </Typography>
+                        <Typography>
+                            {description}
+                        </Typography>
+                        <Typography>
+                            {contact}
+                        </Typography>
+                    </CardContent>
+                </Card>
+            );
+        });
     };
 
     const displayMobile = () => {

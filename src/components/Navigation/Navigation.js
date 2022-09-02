@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import './Navigation.css';
-import { createTheme, responsiveFontSizes, ThemeProvider } from '@mui/material/styles';
+// import { Link } from '@mui/material';
 import { Link, BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import {
     AppBar,
-    CssBaseline,
     Toolbar,
     Typography,
     useScrollTrigger,
@@ -14,7 +13,6 @@ import {
     Button,
     Menu,
     MenuItem,
-    Stack,
 } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -160,6 +158,10 @@ function Navigation() {
     };
 
     const getDrawerChoices = () => {
+
+        const handleDrawerClose = () =>
+            setState((prevState) => ({ ...prevState, drawerOpen: false }));
+
         return headersData.map(({ label, href }) => {
             return (
                 <Link
@@ -171,7 +173,7 @@ function Navigation() {
                         key: label,
                     }}
                 >
-                    <MenuItem sx={{ display: 'flex', justifyContent: 'center', color: 'black' }}>{label}</MenuItem>
+                    <MenuItem onClick={handleDrawerClose} sx={{ display: 'flex', justifyContent: 'center', color: 'black' }}>{label}</MenuItem>
                 </Link>
             );
         });
@@ -229,7 +231,7 @@ function Navigation() {
                         <Button variant="text" sx={{ color: 'black' }}>Home</Button>
                     </Link>
                     <Link to='/fixtures' style={{ textDecoration: 'none' }}>
-                    <Button variant="text" sx={{ color: 'black' }}>Fixtures</Button>
+                        <Button variant="text" sx={{ color: 'black' }}>Fixtures</Button>
                     </Link>
                     {/* <Button
                         id="basic-button"
@@ -255,10 +257,10 @@ function Navigation() {
                         <MenuItem onClick={handleClose}>Events</MenuItem>
                     </Menu> */}
                     <Link to='/events' style={{ textDecoration: 'none' }}>
-                    <Button variant="text" sx={{ color: 'black' }}>Events</Button>
+                        <Button variant="text" sx={{ color: 'black' }}>Events</Button>
                     </Link>
                     <Link to='/history' style={{ textDecoration: 'none' }}>
-                    <Button variant="text" sx={{ color: 'black' }}>History</Button>
+                        <Button variant="text" sx={{ color: 'black' }}>History</Button>
                     </Link>
                     {/* <Button
                         id="basic-button"

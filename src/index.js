@@ -10,6 +10,7 @@ import './index.css';
 
 // import App from './components/App/App';
 import Navigation from './components/Navigation/Navigation';
+import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
 import Events from './components/Events/Events';
 import Fixtures from './components/Fixtures/Fixtures';
@@ -39,6 +40,7 @@ ReactDOM.render(
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
+      <Footer />
     </Router>
   </div>,
 
