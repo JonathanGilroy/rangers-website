@@ -21,8 +21,6 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import MenuIcon from '@mui/icons-material/Menu';
 import Drawer from '@mui/material/Drawer';
 import Box from '@mui/material/Box';
-// import ReactImage from 'react-image-wrapper';
-// import ReactImageWrapperComponent from "react-image-wrapper";
 
 const headersData = [
     {
@@ -185,8 +183,6 @@ function Navigation() {
     const displayDesktop = () => {
         return (
             <Toolbar sx={{ ml: 15, mr: 15, p: 1 }}>
-                {/* <ReactImage className="Logo" src="/favicon.ico" alt="Rangers Logo" height={80}
-                    keepAspectRatio={true} /> */}
                     <img className="Logo" src="/favicon.ico" alt="Rangers Logo" height={80}
                     keepAspectRatio={true} />
                 <Grid container>

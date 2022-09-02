@@ -41,7 +41,7 @@ function Contact() {
                 }}>
                     <Typography>
                         <h1>Fixtures</h1>
-                        <p>We are a currently working to create our own fixtures and results page. In the mean time, please find the club fixtures on the RFU website below:</p>
+                        <p>We are currently working to create our own fixtures and results page. In the mean time, please find the club fixtures on the RFU website below:</p>
                         <ul>
                             <li>
                                 <Link

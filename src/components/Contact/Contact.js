@@ -47,7 +47,7 @@ function Contact() {
                         come down to one of our training sessions on a Tuesday or Thursday night at 7pm and talk to one of the coaches. We can be
                         found at Robinson Field, Ixworth Road, Thurston, Bury St Edmunds, IP31 3QE.
                         <br /><br />
-                        {'If you would like to get in contact with a member of the club committee, email us at '}
+                        {'If you would like to get in contact with a member of the club committee and for general enquiries email us at '}
                         <Link color="inherit" href={'mailto:thurstonrugbyclub@live.co.uk'}>
                             thurstonrugbyclub@live.co.uk
                         </Link>

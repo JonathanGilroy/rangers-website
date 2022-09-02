@@ -88,7 +88,7 @@ function Contact() {
                             </Grid>
                             <Grid xs={mobileView ? 12 : 6} container justifyContent={mobileView ? 'flex-start' : 'flex-end'}>
                                 <Typography variant={mobileView ? 'body2' : 'body1'}>
-                                    <Link color='inherit' href={"mailto:" + { contact }}>
+                                    <Link color='inherit' href={`mailto:${contact}`}>
                                         {contact}
                                     </Link>
                                 </Typography>
