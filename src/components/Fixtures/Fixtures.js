@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from '@mui/material';
+import { Link, Typography } from '@mui/material';
 import './Fixtures.css';
 import Box from '@mui/material/Box';
 
@@ -39,26 +39,28 @@ function Contact() {
                     ml:
                         mobileView ? 1 : 2,
                 }}>
-                    <h1>Fixtures</h1>
-                    <p>We are a currently working to create our own fixtures page. In the mean time, please find the club fixtures on the RFU website below:</p>
-                    <ul>
-                        <li>
-                            <Link
-                                href='https://www.englandrugby.com/fixtures-and-results/search-results?team=22795&season=2022-2023#fixtures'
-                                target="_blank"
-                                rel="noopener noreferrer">
-                                First Team
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                href="https://www.englandrugby.com/fixtures-and-results/search-results?team=22796&season=2022-2023#fixtures"
-                                target="_blank"
-                                rel="noopener noreferrer">
-                                Second Team
-                            </Link>
-                        </li>
-                    </ul>
+                    <Typography>
+                        <h1>Fixtures</h1>
+                        <p>We are a currently working to create our own fixtures and results page. In the mean time, please find the club fixtures on the RFU website below:</p>
+                        <ul>
+                            <li>
+                                <Link
+                                    href='https://www.englandrugby.com/fixtures-and-results/search-results?team=22795&season=2022-2023#fixtures'
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+                                    First Team
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    href="https://www.englandrugby.com/fixtures-and-results/search-results?team=22796&season=2022-2023#fixtures"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+                                    Second Team
+                                </Link>
+                            </li>
+                        </ul>
+                    </Typography>
                 </Box>
             </>
         );

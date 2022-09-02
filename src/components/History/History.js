@@ -38,8 +38,9 @@ function Contact() {
                         mobileView ? 1 : 2,
                     ml:
                         mobileView ? 1 : 2,
+                        mb: 4,
                 }}>
-                    <Typography>
+                    <Typography align='justify'>
                         <h1>Club History</h1>
                         <p>A Brief History of Thurston Rugby Club from the perspective of an ancient, Scottish ex-player and VP.</p>
                         <p>

@@ -100,14 +100,16 @@ function Navigation() {
         return (
             <Toolbar disableGutters="true">
                 <Typography variant="h5" sx={{
-                    color: "#000000",
+                    // color: "#000000",
+                    color: 'white',
                     marginLeft: 2,
                 }}>
                     Thurston Rangers
                 </Typography>
                 <Box display="flex" justifyContent="flex-end" alignItems="flex-end" sx={{ flexGrow: 1 }}>
                     <Button onClick={handleDrawerOpen}>
-                        <MenuIcon variant="contained" sx={{ color: "black" }} />
+                        <MenuIcon variant="contained" sx={{ color: "white" }} />
+                        {/* <MenuIcon variant="contained" sx={{ color: "black" }} /> */}
                     </Button>
                     <Drawer
                         {...{
@@ -297,7 +299,8 @@ function Navigation() {
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="static" className="AppBar"
                 sx={{
-                    backgroundColor: "#FFFFFF",
+                    backgroundColor:
+                    mobileView ? '#000080' : "#FFFFFF",
                 }}>
                 {mobileView ? displayMobile() : displayDesktop()}
             </AppBar>

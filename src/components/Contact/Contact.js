@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './Contact.css';
 import Box from '@mui/material/Box';
+import { Link } from '@mui/material';
+import { Typography } from '@mui/material';
 
 function Contact() {
 
@@ -37,9 +39,20 @@ function Contact() {
                         mobileView ? 1 : 2,
                     ml:
                         mobileView ? 1 : 2,
+                    mb: 4,
                 }}>
-                    <h1>Contact Us</h1>
-                    <p>We are a ...</p>
+                    <Typography align='justify'>
+                        <h1>Contact Us</h1>
+                        We are a very friendly club and warmly welcome all new players and supporters! If you are thinking about joining to play,
+                        come down to one of our training sessions on a Tuesday or Thursday night at 7pm and talk to one of the coaches. We can be
+                        found at Robinson Field, Ixworth Road, Thurston, Bury St Edmunds, IP31 3QE.
+                        <br /><br />
+                        {'If you would like to get in contact with a member of the club committee, email us at '}
+                        <Link color="inherit" href={'mailto:thurstonrugbyclub@live.co.uk'}>
+                            thurstonrugbyclub@live.co.uk
+                        </Link>
+                        .
+                    </Typography>
                 </Box>
             </>
         );

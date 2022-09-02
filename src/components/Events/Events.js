@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Events.css';
 import Box from '@mui/material/Box';
+import { Link } from '@mui/material';
 import {
     Card,
     CardContent,
@@ -13,7 +14,7 @@ import {
 const tempEventData = {
     "socialEvents": [
         { event: "VP Dinner", date: "03.09.2022", description: "VP Lunches are a great opportunity to get together with your fellow Rangers, enjoy a beer or two and support the team! Book a table at £30 a head for a table of 8.", contact: "thurstonrugbyclub@live.co.uk" },
-        { event: "Ladies Luncheon", date: "24.09.2022", description: "A lunch out for the ladies! Details to follow", contact: "thurstonrugbyclub@live.co.uk" },
+        { event: "Ladies Luncheon", date: "24.09.2022", description: "A lunch out for the ladies! Bottomless brunch with 90 minutes of unlimited pizza, pasta, prosecco and wine. Tickets at £30 a head. Email the club or contact Liam or Chris to get your tickets now.", contact: "thurstonrugbyclub@live.co.uk" },
         { event: "VP Dinner", date: "15.10.2022", description: "VP Lunches are a great opportunity to get together with your fellow Rangers, enjoy a beer or two and support the team! Book a table at £30 a head for a table of 8.", contact: "thurstonrugbyclub@live.co.uk" },
         { event: "VP Dinner", date: "12.11.2022", description: "VP Lunches are a great opportunity to get together with your fellow Rangers, enjoy a beer or two and support the team! Book a table at £30 a head for a table of 8.", contact: "thurstonrugbyclub@live.co.uk" },
         { event: "VP Dinner", date: "21.01.2023", description: "VP Lunches are a great opportunity to get together with your fellow Rangers, enjoy a beer or two and support the team! Book a table at £30 a head for a table of 8.", contact: "thurstonrugbyclub@live.co.uk" },
@@ -60,7 +61,7 @@ function Contact() {
                     <Typography>
                         <h1>Events</h1>
                     </Typography>
-                    <Box sx={{ display: 'flex', flexDirection: 'column' }} alignItems='center'>
+                    <Box sx={{ display: 'flex', flexDirection: 'column', mb: 4 }} alignItems='center'>
                         {getEventCards()}
                     </Box>
                 </Box>
@@ -71,20 +72,28 @@ function Contact() {
     const getEventCards = () => {
         return tempEventData.socialEvents.map(({ event, date, description, contact }) => {
             return (
-                <Card sx={{ mb: 2, width: '80%' }} elevation={3}>
+                <Card sx={{ mb: 2, width: mobileView ? '90%' : '80%' }} elevation={4}>
                     <CardContent>
-                        <Typography variant='h5'>
+                        <Typography variant='h5' sx={{ mb: 2 }}>
                             {event}
                         </Typography>
-                        <Typography>
-                            {date}
-                        </Typography>
-                        <Typography>
+                        <Typography sx={{ mb: 2 }}>
                             {description}
                         </Typography>
-                        <Typography>
-                            {contact}
-                        </Typography>
+                        <Grid container>
+                            <Grid xs={mobileView ? 12 : 6} justifyContent='flex-start'>
+                                <Typography>
+                                    {date}
+                                </Typography>
+                            </Grid>
+                            <Grid xs={mobileView ? 12 : 6} container justifyContent={mobileView ? 'flex-start' : 'flex-end'}>
+                                <Typography variant={mobileView ? 'body2' : 'body1'}>
+                                    <Link color='inherit' href={"mailto:" + { contact }}>
+                                        {contact}
+                                    </Link>
+                                </Typography>
+                            </Grid>
+                        </Grid>
                     </CardContent>
                 </Card>
             );
