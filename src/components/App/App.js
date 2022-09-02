@@ -1,11 +1,7 @@
+import React from 'react';
 import logo from './rangers-logo.jpg';
 import './App.css';
-import React from 'react';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import Button from '@mui/material/Button';
-import Grid from '@mui/material/Grid';
+// import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
 
 function App() {
   return (
@@ -54,8 +50,10 @@ function App() {
           </Grid>
         </Grid>
       </header>
+      {/* <AmplifySignOut /> */}
     </div>
   );
 }
 
+// export default withAuthenticator(App);
 export default App;
