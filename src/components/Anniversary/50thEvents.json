@@ -1,0 +1,28 @@
+{
+    "AnniversaryEvents": [
+        {
+            "event": "Sevens Tournament and Hog Roast",
+            "date": "15.07.2023",
+            "description": "We're kicking off our 50th anniversary year celebrations with a sevens tournament in July. As if that wasn't good enough, we're also having a hog roast! So bring your friends and family down for a cracking day of rugby, food, drinks and laughs.",
+            "contact": "thurstonrugbyclub@live.co.uk"
+        },
+        {
+            "event": "Presidents XV v Thurston with Pre-Match Lunch",
+            "date": "02.09.2023",
+            "description": "The club presidents finest 15 take on the Rangers in this special fixture. The match will be preceded by a lunch to get everyone ready for the big game.",
+            "contact": "thurstonrugbyclub@live.co.uk"
+        },
+        {
+            "event": "Sportsman's Dinner",
+            "date": "30.03.2024",
+            "description": "Further details coming soon.",
+            "contact": "thurstonrugbyclub@live.co.uk"
+        },
+        {
+            "event": "End of Season Dinner",
+            "date": "15.06.2024",
+            "description": "The end of our 50th season event, it's going to be big one!",
+            "contact": "thurstonrugbyclub@live.co.uk"
+        }
+    ]
+}

@@ -48,7 +48,7 @@ function Home() {
                         cups and gaining promotion to higher leagues (Eastern Counties 1 and Eastern Counties Greene King Division One South
                         respectively). <br /><br />
                         The club is also due to celebrate it's 50th birthday in 2023, so keep an eye out for news and events to mark this
-                        special event next year! The club has a fanatstic community and hosts multiple social events throughout the year
+                        special event next year! The club has a fantastic community and hosts multiple social events throughout the year
                         including VP dinners, ladies luncheons, hog roasts and annual dinner. <br /><br />
                         So whether you're a player or supporter, newcomer or vet, come on down!
                     </Typography>

@@ -51,7 +51,9 @@ function Contact() {
                         <Link color="inherit" href={'mailto:thurstonrugbyclub@live.co.uk'}>
                             thurstonrugbyclub@live.co.uk
                         </Link>
-                        .
+                        . You can also message us on <Link color="inherit" href="https://www.facebook.com/Thurston-RUFC-132633373430087" target="_blank" rel="noopener noreferrer">
+                            Facebook
+                        </Link>.
                     </Typography>
                 </Box>
             </>

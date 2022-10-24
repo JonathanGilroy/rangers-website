@@ -16,6 +16,7 @@ import Events from './components/Events/Events';
 import Fixtures from './components/Fixtures/Fixtures';
 import Contact from './components/Contact/Contact';
 import History from './components/History/History';
+import Anniversary from './components/Anniversary/Anniversary';
 
 ReactDOM.render(
   <div className="page-container">
@@ -37,6 +38,7 @@ ReactDOM.render(
           <Route path="/fixtures" element={<Fixtures />} />
           <Route path="/events" element={<Events />} />
           <Route path="/history" element={<History />} />
+          <Route path="/anniversary" element={<Anniversary />}/>
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>

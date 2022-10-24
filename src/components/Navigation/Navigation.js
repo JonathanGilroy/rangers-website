@@ -40,6 +40,10 @@ const headersData = [
         href: "/history",
     },
     {
+        label: "50th Anniversary",
+        href: "/anniversary",
+    },
+    {
         label: "Contact",
         href: "/contact",
     },
@@ -262,6 +266,9 @@ function Navigation() {
                     </Link>
                     <Link to='/history' style={{ textDecoration: 'none' }}>
                         <Button variant="text" sx={{ color: 'black' }}>History</Button>
+                    </Link>
+                    <Link to='/anniversary' style={{ textDecoration: 'none' }}>
+                        <Button variant="text" sx={{ color: 'black' }}>50th Anniversary</Button>
                     </Link>
                     {/* <Button
                         id="basic-button"

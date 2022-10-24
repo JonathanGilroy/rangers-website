@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Events.css';
+import './Anniversary.css';
 import Box from '@mui/material/Box';
 import { Link } from '@mui/material';
 import {
@@ -10,9 +10,9 @@ import {
     Typography,
     Grid,
 } from '@mui/material';
-import tempEventData from './Events.json';
+import tempEventData from './50thEvents.json';
 
-function Events() {
+function Anniversary() {
 
     const [state, setState] = useState({
         mobileView: false,
@@ -48,8 +48,15 @@ function Events() {
                     ml:
                         mobileView ? 1 : 2,
                 }}>
-                    <Typography>
-                        <h1>Events</h1>
+                    <Typography align='center'>
+                        <h1>Thurston Rangers 50th Anniversary</h1>
+                    </Typography>
+                    <Typography align='justify' variant='body1' sx={{ mb: 4 }}>
+                        The club is about to celebrate its 50th anniversary and is putting on some special events to mark the
+                        occasion. On top of this, we will also be going through the archives to post some historic club
+                        pictures, and will be diving in to the clubs history. So stay tuned to keep up with everything to come!
+                        <br /><br />
+                        Please see the currently announced events below:
                     </Typography>
                     <Box sx={{ display: 'flex', flexDirection: 'column', mb: 4 }} alignItems='center'>
                         {getEventCards()}
@@ -60,7 +67,7 @@ function Events() {
     };
 
     const getEventCards = () => {
-        return tempEventData.socialEvents.map(({ event, date, description, contact }) => {
+        return tempEventData.AnniversaryEvents.map(({ event, date, description, contact }) => {
             return (
                 <Card sx={{ mb: 6, width: mobileView ? '90%' : '80%' }} style={{ backgroundColor: '#F0F0F0' }} elevation={4}>
                     <CardContent>
@@ -132,4 +139,4 @@ function Events() {
     );
 }
 
-export default Events;
+export default Anniversary;
