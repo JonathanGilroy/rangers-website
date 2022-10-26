@@ -38,10 +38,12 @@ function Contact() {
                         mobileView ? 1 : 2,
                     ml:
                         mobileView ? 1 : 2,
-                        mb: 4,
+                    mb: 4,
                 }}>
-                    <Typography align='justify'>
+                    <Typography align='center'>
                         <h1>Club History</h1>
+                    </Typography>
+                    <Typography align='justify'>
                         <p>A Brief History of Thurston Rugby Club from the perspective of an ancient, Scottish ex-player and VP.</p>
                         <p>
                             My first sight of Thurston Rugby Club was when I was playing at Sudbury in 1974 and between scrums saw them take a good 3rd XV apart – they were wearing distinctive navy blue shirts and played a fast, hard, open game, which they continued energetically in the bar afterwards. A really sociable bunch of guys.<br /><br />

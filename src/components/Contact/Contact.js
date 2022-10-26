@@ -41,8 +41,10 @@ function Contact() {
                         mobileView ? 1 : 2,
                     mb: 4,
                 }}>
-                    <Typography align='justify'>
+                    <Typography align='center'>
                         <h1>Contact Us</h1>
+                    </Typography>
+                    <Typography align='justify'>
                         We are a very friendly club and warmly welcome all new players and supporters! If you are thinking about joining to play,
                         come down to one of our training sessions on a Tuesday or Thursday night at 7pm and talk to one of the coaches. We can be
                         found at Robinson Field, Ixworth Road, Thurston, Bury St Edmunds, IP31 3QE.

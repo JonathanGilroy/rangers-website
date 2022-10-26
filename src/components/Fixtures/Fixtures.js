@@ -39,8 +39,10 @@ function Contact() {
                     ml:
                         mobileView ? 1 : 2,
                 }}>
-                    <Typography>
+                    <Typography align="center">
                         <h1>Fixtures</h1>
+                    </Typography>
+                    <Typography>
                         <p>We are currently working to create our own fixtures and results page. In the mean time, please find the club fixtures on the RFU website below:</p>
                         <ul>
                             <li>

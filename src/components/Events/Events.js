@@ -48,7 +48,7 @@ function Events() {
                     ml:
                         mobileView ? 1 : 2,
                 }}>
-                    <Typography>
+                    <Typography align="center">
                         <h1>Events</h1>
                     </Typography>
                     <Box sx={{ display: 'flex', flexDirection: 'column', mb: 4 }} alignItems='center'>
