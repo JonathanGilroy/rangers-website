@@ -306,7 +306,8 @@ function Navigation() {
             <AppBar position="static" className="AppBar"
                 sx={{
                     backgroundColor:
-                    mobileView ? '#000080' : "#FFFFFF",
+                    mobileView ? '#000036' : "#FFFFFF",
+                    // mobileView ? '#000036' : "#000036",
                 }}>
                 {mobileView ? displayMobile() : displayDesktop()}
             </AppBar>

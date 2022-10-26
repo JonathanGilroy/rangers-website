@@ -23,14 +23,15 @@ ReactDOM.render(
     <Router>
       <div className="content-wrap"
       style={{
-        // backgroundImage: 'url(/wallpaper.jpg)',
-        backgroundImage: 'linear-gradient(to right, #8B0000, #000080)',
+        // backgroundImage: 'linear-gradient(to right, #8B0000, #000036)',
+        backgroundImage: 'url(/wallpaper4n2.jpg)',
+        backgroundAttachment: 'fixed',
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         // width: '100vw',
         // height: '100vh',
-        // filter: 'brightness(70%)',
+        // filter: 'brightness(50%)',
       }}>
         <Navigation />
         <Routes>
