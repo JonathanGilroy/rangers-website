@@ -28,19 +28,20 @@ function Home() {
     const contentToDisplay = () => {
         return (
             <>
-                <img src={'cup-victory.jpg'}
+                <img src={'cup-victory-2.jpg'}
                     alt="Thurston Rangers first team celebrating victory after the Suffolk Cup Final."
                     style={{
                         maxWidth: '100%',
+                        width: '100%'
                     }} />
                 <Box sx={{
                     mr:
-                        mobileView ? 1 : 2,
+                        mobileView ? 2 : 2,
                     ml:
-                        mobileView ? 1 : 2,
+                        mobileView ? 2 : 2,
                 }}>
                     <Typography align='center'>
-                        <h1>Blood, sweat and beers!</h1>
+                        <h1>Blood, sweat and beers</h1>
                     </Typography>
                     <Typography align='justify' variant='body1' sx={{ mb: 4 }}>
                         We are a friendly community rugby club based in Thurston, Suffolk currently fielding two mens teams. Following

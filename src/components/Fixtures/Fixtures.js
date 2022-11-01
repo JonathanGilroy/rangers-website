@@ -28,22 +28,23 @@ function Contact() {
     const contentToDisplay = () => {
         return (
             <>
-                <img src={'cup-victory.jpg'}
-                    alt="Thurston Rangers first team celebrating victory after the Suffolk Cup Final."
+                <img src={'jenks-wallpaper-2.jpg'}
+                    alt="Thurston Ranger smiling running onto the pitch for kick off."
                     style={{
                         maxWidth: '100%',
+                        width: '100%'
                     }} />
                 <Box sx={{
                     mr:
-                        mobileView ? 1 : 2,
+                        mobileView ? 2 : 2,
                     ml:
-                        mobileView ? 1 : 2,
+                        mobileView ? 2 : 2,
                 }}>
                     <Typography align="center">
                         <h1>Fixtures</h1>
                     </Typography>
                     <Typography>
-                        <p>We are currently working to create our own fixtures and results page. In the mean time, please find the club fixtures on the RFU website below:</p>
+                        <p>We are currently working to create our own fixtures and results page. In the mean time, please find the club fixtures and results on the RFU website below:</p>
                         <ul>
                             <li>
                                 <Link

@@ -37,16 +37,17 @@ function Anniversary() {
     const contentToDisplay = () => {
         return (
             <>
-                <img src={'cup-victory.jpg'}
-                    alt="Thurston Rangers first team celebrating victory after the Suffolk Cup Final."
+                <img src={'jack-wallpaper.jpg'}
+                    alt="Thurston Ranger scoring a try."
                     style={{
                         maxWidth: '100%',
+                        width: '100%'
                     }} />
                 <Box sx={{
                     mr:
-                        mobileView ? 1 : 2,
+                        mobileView ? 2 : 2,
                     ml:
-                        mobileView ? 1 : 2,
+                        mobileView ? 2 : 2,
                 }}>
                     <Typography align='center'>
                         <h1>Thurston Rangers 50th Anniversary</h1>

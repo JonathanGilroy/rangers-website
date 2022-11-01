@@ -37,16 +37,17 @@ function Events() {
     const contentToDisplay = () => {
         return (
             <>
-                <img src={'cup-victory.jpg'}
-                    alt="Thurston Rangers first team celebrating victory after the Suffolk Cup Final."
+                <img src={'events-2-wallpaper.jpg'}
+                    alt="Thurston Rangers dinner at the Robbo clubhouse."
                     style={{
                         maxWidth: '100%',
+                        width: '100%'
                     }} />
                 <Box sx={{
                     mr:
-                        mobileView ? 1 : 2,
+                        mobileView ? 2 : 2,
                     ml:
-                        mobileView ? 1 : 2,
+                        mobileView ? 2 : 2,
                 }}>
                     <Typography align="center">
                         <h1>Events</h1>

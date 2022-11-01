@@ -28,16 +28,17 @@ function Contact() {
     const contentToDisplay = () => {
         return (
             <>
-                <img src={'cup-victory.jpg'}
-                    alt="Thurston Rangers first team celebrating victory after the Suffolk Cup Final."
+                <img src={'harry-wallpaper.jpg'}
+                    alt="Thurston Ranger carrying the ball into contact."
                     style={{
                         maxWidth: '100%',
+                        width: '100%'
                     }} />
                 <Box sx={{
                     mr:
-                        mobileView ? 1 : 2,
+                        mobileView ? 2 : 2,
                     ml:
-                        mobileView ? 1 : 2,
+                        mobileView ? 2 : 2,
                     mb: 4,
                 }}>
                     <Typography align='center'>
