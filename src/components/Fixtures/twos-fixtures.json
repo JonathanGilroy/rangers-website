@@ -1,0 +1,39 @@
+{
+    "fixtures": [
+        {
+            "home": "Thurston 2nd",
+            "hScore": "",
+            "away": "Halstead",
+            "aScore": "",
+            "date": "05 November 2022"
+        },
+        {
+            "home": "Hadleigh",
+            "hScore": "",
+            "away": "Thurston 2nd",
+            "aScore": "",
+            "date": "12 November 2022"
+        },
+        {
+            "home": "Thurston 2nd",
+            "hScore": "",
+            "away": "Braintree 2nd",
+            "aScore": "",
+            "date": "26 November 2022"
+        },
+        {
+            "home": "Colchester 3rd",
+            "hScore": "",
+            "away": "Thurston 2nd",
+            "aScore": "",
+            "date": "03 December 2022"
+        },
+        {
+            "home": "Thurston 2nd",
+            "hScore": "",
+            "away": "Felixstowe",
+            "aScore": "",
+            "date": "10 December 2022"
+        }
+    ]
+}
