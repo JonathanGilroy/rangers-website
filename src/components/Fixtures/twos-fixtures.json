@@ -2,9 +2,9 @@
     "fixtures": [
         {
             "home": "Thurston 2nd",
-            "hScore": "",
+            "hScore": "45",
             "away": "Halstead",
-            "aScore": "",
+            "aScore": "15",
             "date": "05 November 2022"
         },
         {

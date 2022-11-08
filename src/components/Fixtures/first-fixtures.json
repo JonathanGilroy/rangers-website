@@ -2,9 +2,9 @@
     "fixtures": [
         {
             "home": "West Norfolk",
-            "hScore": "",
+            "hScore": "23",
             "away": "Thurston",
-            "aScore": "",
+            "aScore": "19",
             "date": "05 November 2022"
         },
         {
