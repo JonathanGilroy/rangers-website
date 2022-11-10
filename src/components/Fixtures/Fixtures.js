@@ -105,10 +105,10 @@ function Contact() {
                         onChange={handleChange}
                         centered
                         sx={{
-                            '& .MuiTabs-indicator': { backgroundColor: '#AA0000' },
-                            '& .MuiTab-root': { color: '' },
-                            // https://codingbeautydev.com/blog/material-ui-tabs/
-                            '& .Mui-selected': { color: '#AA0000' },
+                            // '& .MuiTabs-indicator': { backgroundColor: '#AA0000' },
+                            // '& .MuiTab-root': { color: '' },
+                            // // https://codingbeautydev.com/blog/material-ui-tabs/
+                            // '& .Mui-selected': { color: '#AA0000' },
                         }}>
                         <Tab label="First Team" />
                         <Tab label="Second Team" />
