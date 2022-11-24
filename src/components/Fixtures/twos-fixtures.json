@@ -29,11 +29,60 @@
             "date": "03 December 2022"
         },
         {
-            "home": "Thurston 2nd",
+            "home": "Felixstowe",
             "hScore": "",
-            "away": "Felixstowe",
+            "away": "Thurston 2nd",
             "aScore": "",
             "date": "10 December 2022"
+        },
+        {
+            "home": "Thurston 2nd",
+            "hScore": "",
+            "away": "Stowmarket 2nd",
+            "aScore": "",
+            "date": "14 January 2023"
+        },
+        {
+            "home": "Mistley",
+            "hScore": "",
+            "away": "Thurston 2nd",
+            "aScore": "",
+            "date": "21 January 2023"
+        },
+        {
+            "home": "Mersea Island",
+            "hScore": "",
+            "away": "Thurston 2nd",
+            "aScore": "",
+            "date": "28 January 2023"
+        },
+        {
+            "home": "Halstead Templars",
+            "hScore": "",
+            "away": "Thurston 2nd",
+            "aScore": "",
+            "date": "11 February 2023"
+        },
+        {
+            "home": "Thurston 2nd",
+            "hScore": "",
+            "away": "Hadleigh",
+            "aScore": "",
+            "date": "18 February 2023"
+        },
+        {
+            "home": "Braintree 2nd",
+            "hScore": "",
+            "away": "Thurston 2nd",
+            "aScore": "",
+            "date": "4 March 2023"
+        },
+        {
+            "home": "Thurston 2nd",
+            "hScore": "",
+            "away": "Brightlingsea",
+            "aScore": "",
+            "date": "11 March 2023"
         }
     ]
 }
