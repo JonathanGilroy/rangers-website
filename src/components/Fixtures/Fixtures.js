@@ -104,6 +104,8 @@ function Contact() {
                     <Tabs value={value}
                         onChange={handleChange}
                         centered
+                        textColor="primary"
+                        indicatorColor="primary"
                         sx={{
                             // '& .MuiTabs-indicator': { backgroundColor: '#AA0000' },
                             // '& .MuiTab-root': { color: '' },

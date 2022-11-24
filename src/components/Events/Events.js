@@ -37,7 +37,7 @@ function Events() {
     const contentToDisplay = () => {
         return (
             <>
-                <img src={'events-2-wallpaper.jpg'}
+                <img src={'craig-wallpaper.jpg'}
                     alt="Thurston Rangers dinner at the Robbo clubhouse."
                     style={{
                         maxWidth: '100%',
@@ -51,8 +51,11 @@ function Events() {
                 }}>
                     <Typography align="center">
                         <h1>Events</h1>
+                        <Typography align='justify' sx={{ ml: 4 }}>
+                            <p>Please find our currently scheduled events below.</p>
+                        </Typography>
                     </Typography>
-                    <Box sx={{ display: 'flex', flexDirection: 'column', mb: 4 }} alignItems='center'>
+                    <Box sx={{ display: 'flex', flexDirection: 'column', mb: 4, mt: 5 }} alignItems='center'>
                         {getEventCards()}
                     </Box>
                 </Box>

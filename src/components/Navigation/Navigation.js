@@ -192,7 +192,7 @@ function Navigation() {
                 <Grid container>
                     <Grid item xs={8} sx={{ display: { xs: 'flex' } }}>
                         <Typography variant="h4" sx={{
-                            color: "#000000",
+                            color: "black",
                             marginLeft: 1,
                         }}>
                             Thurston Rangers RUFC
@@ -304,6 +304,7 @@ function Navigation() {
     return (
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="static" className="AppBar"
+            // color='primary'
                 sx={{
                     backgroundColor:
                     mobileView ? '#000036' : "#FFFFFF",
