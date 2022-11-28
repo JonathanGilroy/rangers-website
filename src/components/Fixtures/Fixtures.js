@@ -115,8 +115,8 @@ function Contact() {
         />
         <Box
           sx={{
-            mr: mobileView ? 2 : 6,
-            ml: mobileView ? 2 : 6,
+            mr: mobileView ? 1 : 6,
+            ml: mobileView ? 1 : 6,
           }}
         >
           <Typography align="center" sx={{ mb: 6 }}>

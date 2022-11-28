@@ -51,7 +51,7 @@ function Events() {
                 }}>
                     <Typography align="center">
                         <h1>Events</h1>
-                        <Typography align='justify' sx={{ ml: 4 }}>
+                        <Typography align='justify'>
                             <p>Please find our currently scheduled events below.</p>
                         </Typography>
                     </Typography>
