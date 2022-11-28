@@ -45,9 +45,9 @@ function Anniversary() {
                     }} />
                 <Box sx={{
                     mr:
-                        mobileView ? 2 : 2,
+                        mobileView ? 2 : 6,
                     ml:
-                        mobileView ? 2 : 2,
+                        mobileView ? 2 : 6,
                 }}>
                     <Typography align='center'>
                         <h1>Thurston Rangers 50th Anniversary</h1>

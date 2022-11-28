@@ -36,9 +36,9 @@ function Home() {
                     }} />
                 <Box sx={{
                     mr:
-                        mobileView ? 2 : 2,
+                        mobileView ? 2 : 6,
                     ml:
-                        mobileView ? 2 : 2,
+                        mobileView ? 2 : 6,
                 }}>
                     <Typography align='center'>
                         <h1>Blood, sweat and beers</h1>

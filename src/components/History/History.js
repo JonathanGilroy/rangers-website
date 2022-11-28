@@ -36,9 +36,9 @@ function Contact() {
                     }} />
                 <Box sx={{
                     mr:
-                        mobileView ? 2 : 2,
+                        mobileView ? 2 : 6,
                     ml:
-                        mobileView ? 2 : 2,
+                        mobileView ? 2 : 6,
                     mb: 4,
                 }}>
                     <Typography align='center'>

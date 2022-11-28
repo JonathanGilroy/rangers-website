@@ -1,88 +1,100 @@
 {
     "fixtures": [
         {
-            "home": "Thurston 2nd",
+            "home": "Thurston II",
             "hScore": "45",
             "away": "Halstead",
             "aScore": "15",
-            "date": "05 November 2022"
+            "date": "05 November 2022",
+            "result": "win"
         },
         {
             "home": "Hadleigh",
             "hScore": "24",
-            "away": "Thurston 2nd",
+            "away": "Thurston II",
             "aScore": "15",
-            "date": "12 November 2022"
+            "date": "12 November 2022",
+            "result": "loss"
         },
         {
-            "home": "Thurston 2nd",
-            "hScore": "",
-            "away": "Braintree 2nd",
-            "aScore": "",
-            "date": "26 November 2022"
+            "home": "Thurston II",
+            "hScore": "12",
+            "away": "Braintree II",
+            "aScore": "5",
+            "date": "26 November 2022",
+            "result": "win"
         },
         {
-            "home": "Colchester 3rd",
+            "home": "Colchester III",
             "hScore": "",
-            "away": "Thurston 2nd",
+            "away": "Thurston II",
             "aScore": "",
-            "date": "03 December 2022"
+            "date": "03 December 2022",
+            "result": ""
         },
         {
             "home": "Felixstowe",
             "hScore": "",
-            "away": "Thurston 2nd",
+            "away": "Thurston II",
             "aScore": "",
-            "date": "10 December 2022"
+            "date": "10 December 2022",
+            "result": ""
         },
         {
-            "home": "Thurston 2nd",
+            "home": "Thurston II",
             "hScore": "",
-            "away": "Stowmarket 2nd",
+            "away": "Stowmarket II",
             "aScore": "",
-            "date": "14 January 2023"
+            "date": "14 January 2023",
+            "result": ""
         },
         {
             "home": "Mistley",
             "hScore": "",
-            "away": "Thurston 2nd",
+            "away": "Thurston II",
             "aScore": "",
-            "date": "21 January 2023"
+            "date": "21 January 2023",
+            "result": ""
         },
         {
             "home": "Mersea Island",
             "hScore": "",
-            "away": "Thurston 2nd",
+            "away": "Thurston II",
             "aScore": "",
-            "date": "28 January 2023"
+            "date": "28 January 2023",
+            "result": ""
         },
         {
             "home": "Halstead Templars",
             "hScore": "",
-            "away": "Thurston 2nd",
+            "away": "Thurston II",
             "aScore": "",
-            "date": "11 February 2023"
+            "date": "11 February 2023",
+            "result": ""
         },
         {
-            "home": "Thurston 2nd",
+            "home": "Thurston II",
             "hScore": "",
             "away": "Hadleigh",
             "aScore": "",
-            "date": "18 February 2023"
+            "date": "18 February 2023",
+            "result": ""
         },
         {
-            "home": "Braintree 2nd",
+            "home": "Braintree II",
             "hScore": "",
-            "away": "Thurston 2nd",
+            "away": "Thurston II",
             "aScore": "",
-            "date": "4 March 2023"
+            "date": "4 March 2023",
+            "result": ""
         },
         {
-            "home": "Thurston 2nd",
+            "home": "Thurston II",
             "hScore": "",
             "away": "Brightlingsea",
             "aScore": "",
-            "date": "11 March 2023"
+            "date": "11 March 2023",
+            "result": ""
         }
     ]
 }

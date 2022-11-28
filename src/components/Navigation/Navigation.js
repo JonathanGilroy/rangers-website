@@ -302,13 +302,14 @@ function Navigation() {
     };
 
     return (
-        <Box sx={{ flexGrow: 1 }}>
+        <Box sx={{ flexGrow: 1  }}>
             <AppBar position="static" className="AppBar"
             // color='primary'
                 sx={{
                     backgroundColor:
                     mobileView ? '#000036' : "#FFFFFF",
-                    // mobileView ? '#000036' : "#000036",
+                    boxShadow:
+                    mobileView ? "inset 0px 0px 0px 0px #000069" : "inset 0px -4px 6px 0px #BEBEBE"
                 }}>
                 {mobileView ? displayMobile() : displayDesktop()}
             </AppBar>
