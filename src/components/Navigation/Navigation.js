@@ -308,8 +308,8 @@ function Navigation() {
                 sx={{
                     backgroundColor:
                     mobileView ? '#000036' : "#FFFFFF",
-                    boxShadow:
-                    mobileView ? "inset 0px 0px 0px 0px #000069" : "inset 0px -4px 6px 0px #BEBEBE"
+                    // boxShadow:
+                    // mobileView ? "inset 0px 0px 0px 0px #000069" : "inset 0px -4px 6px 0px #BEBEBE"
                 }}>
                 {mobileView ? displayMobile() : displayDesktop()}
             </AppBar>
