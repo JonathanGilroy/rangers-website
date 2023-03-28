@@ -42,59 +42,59 @@
         },
         {
             "home": "Thurston II",
-            "hScore": "",
+            "hScore": "54",
             "away": "Stowmarket II",
-            "aScore": "",
+            "aScore": "12",
             "date": "14 January 2023",
-            "result": ""
+            "result": "win"
         },
         {
             "home": "Mistley",
-            "hScore": "",
+            "hScore": "45",
             "away": "Thurston II",
-            "aScore": "",
-            "date": "21 January 2023",
-            "result": ""
+            "aScore": "40",
+            "date": "21 January 2023 (rescheduled)",
+            "result": "loss"
         },
         {
             "home": "Mersea Island",
-            "hScore": "",
+            "hScore": "-",
             "away": "Thurston II",
-            "aScore": "",
+            "aScore": "-",
             "date": "28 January 2023",
-            "result": ""
+            "result": "loss"
         },
         {
             "home": "Halstead Templars",
-            "hScore": "",
+            "hScore": "19",
             "away": "Thurston II",
-            "aScore": "",
+            "aScore": "17",
             "date": "11 February 2023",
-            "result": ""
+            "result": "loss"
         },
         {
             "home": "Thurston II",
-            "hScore": "",
+            "hScore": "29",
             "away": "Hadleigh",
-            "aScore": "",
+            "aScore": "55",
             "date": "18 February 2023",
-            "result": ""
+            "result": "loss"
         },
         {
             "home": "Braintree II",
-            "hScore": "",
+            "hScore": "17",
             "away": "Thurston II",
-            "aScore": "",
+            "aScore": "31",
             "date": "4 March 2023",
-            "result": ""
+            "result": "win"
         },
         {
             "home": "Thurston II",
-            "hScore": "",
+            "hScore": "35",
             "away": "Brightlingsea",
-            "aScore": "",
+            "aScore": "26",
             "date": "11 March 2023",
-            "result": ""
+            "result": "win"
         }
     ]
 }

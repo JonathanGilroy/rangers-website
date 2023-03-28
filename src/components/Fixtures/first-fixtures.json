@@ -34,83 +34,83 @@
         },
         {
             "home": "Cantabrigian",
-            "hScore": "",
+            "hScore": "43",
             "away": "Thurston",
-            "aScore": "",
-            "date": "10 December 2022",
-            "result": ""
+            "aScore": "19",
+            "date": "10 December 2022 (rescheduled)",
+            "result": "loss"
         },
         {
             "home": "Bury St Edmunds II",
-            "hScore": "",
+            "hScore": "12",
             "away": "Thurston",
-            "aScore": "",
-            "date": "17 December 2022",
-            "result": ""
+            "aScore": "25",
+            "date": "17 December 2022 (rescheduled)",
+            "result": "win"
         },
         {
             "home": "Thurston",
-            "hScore": "",
+            "hScore": "15",
             "away": "Shelford II",
-            "aScore": "",
+            "aScore": "21",
             "date": "7 January 2023",
-            "result": ""
+            "result": "loss"
         },
         {
             "home": "Diss",
-            "hScore": "",
+            "hScore": "25",
             "away": "Thurston",
-            "aScore": "",
+            "aScore": "18",
             "date": "14 January 2023",
-            "result": ""
+            "result": "loss"
         },
         {
             "home": "Thurston",
-            "hScore": "",
+            "hScore": "33",
             "away": "Wymondham",
-            "aScore": "",
-            "date": "21 January 2023",
-            "result": ""
+            "aScore": "22",
+            "date": "21 January 2023 (rescheduled)",
+            "result": "win"
         },
         {
             "home": "Southwold",
-            "hScore": "",
+            "hScore": "21",
             "away": "Thurston",
-            "aScore": "",
+            "aScore": "10",
             "date": "28 January 2023",
-            "result": ""
+            "result": "loss"
         },
         {
             "home": "Thurston",
-            "hScore": "",
+            "hScore": "36",
             "away": "West Norfolk",
-            "aScore": "",
+            "aScore": "41",
             "date": "11 February 2023",
-            "result": ""
+            "result": "loss"
         },
         {
             "home": "Ely",
-            "hScore": "",
+            "hScore": "57",
             "away": "Thurston",
-            "aScore": "",
+            "aScore": "7",
             "date": "18 February 2023",
-            "result": ""
+            "result": "loss"
         },
         {
             "home": "Thurston",
-            "hScore": "",
+            "hScore": "24",
             "away": "Ipswich Y.M.",
-            "aScore": "",
+            "aScore": "24",
             "date": "4 March 2023",
-            "result": ""
+            "result": "draw"
         },
         {
             "home": "Holt",
-            "hScore": "",
+            "hScore": "-",
             "away": "Thurston",
-            "aScore": "",
+            "aScore": "-",
             "date": "11 March 2023",
-            "result": ""
+            "result": "loss"
         }
     ]
 }

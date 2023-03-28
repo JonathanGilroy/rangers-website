@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './Home.css';
 import Box from '@mui/material/Box';
-import { Typography } from '@mui/material';
+import { Typography, Card, CardContent, Grid } from '@mui/material';
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import CancelIcon from "@mui/icons-material/Cancel";
+import DoDisturbOnIcon from "@mui/icons-material/DoDisturbOn";
+import OfflinePinIcon from "@mui/icons-material/OfflinePin";
 
 function Home() {
 
@@ -25,6 +29,38 @@ function Home() {
         }
     }, []);
 
+    const ResultIcon = (props) => {
+        if (props.matchResult === "win") {
+          return (
+            <CheckCircleIcon
+              fontSize="small"
+              sx={{ color: "green", verticalAlign: "text-bottom" }}
+            />
+          );
+        } else if (props.matchResult === "draw") {
+          return (
+            <OfflinePinIcon
+              fontSize="small"
+              sx={{ color: "orange", verticalAlign: "text-bottom" }}
+            />
+          );
+        } else if (props.matchResult === "loss") {
+          return (
+            <CancelIcon
+              fontSize="small"
+              sx={{ color: "red", verticalAlign: "text-bottom" }}
+            />
+          );
+        } else {
+          return (
+            <DoDisturbOnIcon
+              fontSize="small"
+              sx={{ color: "grey", verticalAlign: "text-bottom" }}
+            />
+          );
+        }
+      };
+
     const contentToDisplay = () => {
         return (
             <>
@@ -40,7 +76,72 @@ function Home() {
                     ml:
                         mobileView ? 2 : 6,
                 }}>
-                    <Typography align='center'>
+                    <Grid container direction="row"
+  justifyContent="space-evenly"
+  alignItems="flex-start">
+                        <Grid item>
+                    <Card sx={{ mb: 2, mt: 2, width: mobileView ? 220 : 160, height: 150 }} style={{ backgroundColor: '#F0F0F0' }} elevation={4}>
+                    <CardContent>
+                        <Typography sx={{fontWeight: 'bold'}}>Last 5 results:</Typography>
+                        <Typography>1st XV</Typography>
+                        <Box>
+                        <CheckCircleIcon
+              fontSize="small"
+              sx={{ color: "green", verticalAlign: "text-bottom" }} />
+              <CancelIcon
+              fontSize="small"
+              sx={{ color: "red", verticalAlign: "text-bottom" }}
+            />
+            <OfflinePinIcon
+              fontSize="small"
+              sx={{ color: "orange", verticalAlign: "text-bottom" }}
+            />
+            <CheckCircleIcon
+              fontSize="small"
+              sx={{ color: "green", verticalAlign: "text-bottom" }}
+            />
+            <CancelIcon
+              fontSize="small"
+              sx={{ color: "red", verticalAlign: "text-bottom" }}
+            />
+              </Box>
+                        <Typography>2nd XV</Typography>
+                        <Box>
+                        <CheckCircleIcon
+              fontSize="small"
+              sx={{ color: "green", verticalAlign: "text-bottom" }} />
+              <CheckCircleIcon
+              fontSize="small"
+              sx={{ color: "green", verticalAlign: "text-bottom" }}
+            />
+            <CancelIcon
+              fontSize="small"
+              sx={{ color: "red", verticalAlign: "text-bottom" }}
+            />
+            <CancelIcon
+              fontSize="small"
+              sx={{ color: "red", verticalAlign: "text-bottom" }}
+            />
+            <CancelIcon
+              fontSize="small"
+              sx={{ color: "red", verticalAlign: "text-bottom" }}
+            />
+            </Box>
+                    </CardContent>
+                </Card>
+                </Grid>
+                <Grid item>
+                <Card sx={{ mb: 2, mt: 2, width: mobileView ? 220 : 350, height: mobileView ? 200 : 150 }} style={{ backgroundColor: '#F0F0F0' }} elevation={4}>
+                    <CardContent>
+                        <Typography sx={{fontWeight: 'bold', mb: 2}}>Upcoming fixtures:</Typography>
+                        <Typography variant={'h5'}>Rangers v Young Farmers</Typography>
+                        <Typography sx={{}}>Robinson Field</Typography>
+                        <Typography sx={{}}>KO: 2pm, 7th April 2023</Typography>
+                    </CardContent>
+                </Card>
+                </Grid>
+                </Grid>
+                <Typography align='center'>
                         <h1>Blood, sweat and beers</h1>
                     </Typography>
                     <Typography align='justify' variant='body1' sx={{ mb: 4 }}>
