@@ -6,7 +6,6 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import CancelIcon from "@mui/icons-material/Cancel";
 import DoDisturbOnIcon from "@mui/icons-material/DoDisturbOn";
 import OfflinePinIcon from "@mui/icons-material/OfflinePin";
-import { GoogleApiWrapper } from 'google-maps-react';
 
 function Home() {
 
