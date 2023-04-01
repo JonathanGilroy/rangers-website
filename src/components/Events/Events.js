@@ -37,12 +37,6 @@ function Events() {
     const contentToDisplay = () => {
         return (
             <>
-                <img src={'craig-wallpaper.jpg'}
-                    alt="Thurston Rangers dinner at the Robbo clubhouse."
-                    style={{
-                        maxWidth: '100%',
-                        width: '100%'
-                    }} />
                 <Box sx={{
                     mr:
                         mobileView ? 2 : 6,

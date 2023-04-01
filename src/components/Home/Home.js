@@ -6,6 +6,7 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import CancelIcon from "@mui/icons-material/Cancel";
 import DoDisturbOnIcon from "@mui/icons-material/DoDisturbOn";
 import OfflinePinIcon from "@mui/icons-material/OfflinePin";
+import { GoogleApiWrapper } from 'google-maps-react';
 
 function Home() {
 
@@ -64,12 +65,9 @@ function Home() {
     const contentToDisplay = () => {
         return (
             <>
-                <img src={'cup-victory-2.jpg'}
-                    alt="Thurston Rangers first team celebrating victory after the Suffolk Cup Final."
-                    style={{
-                        maxWidth: '100%',
-                        width: '100%'
-                    }} />
+            <Typography variant={mobileView ? 'h4' : 'h1'} align='center' sx={{mt: 2, mb: 2}}>
+                        Thurston Rangers
+                    </Typography>
                 <Box sx={{
                     mr:
                         mobileView ? 2 : 6,
@@ -141,8 +139,8 @@ function Home() {
                 </Card>
                 </Grid>
                 </Grid>
-                <Typography align='center'>
-                        <h1>Blood, sweat and beers</h1>
+                <Typography variant={mobileView ? 'h4' : 'h3'} align='center' sx={{mt:3, mb:3}}>
+                        Blood, sweat and beers
                     </Typography>
                     <Typography align='justify' variant='body1' sx={{ mb: 4 }}>
                         We are a friendly community rugby club based in Thurston, Suffolk currently fielding two mens teams. Following

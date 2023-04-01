@@ -10,6 +10,7 @@ import './index.css';
 
 import Navigation from './components/Navigation/Navigation';
 import Footer from './components/Footer/Footer';
+import Banner from './components/Banner/banner';
 import Home from './components/Home/Home';
 import Events from './components/Events/Events';
 import Fixtures from './components/Fixtures/Fixtures';
@@ -27,13 +28,15 @@ ReactDOM.render(
       <Router>
         <div className="content-wrap"
           style={{
-            backgroundImage: 'url(/wallpaper4n2.jpg)',
+            // backgroundImage: 'url(/wallpaper4n2.jpg)',
+            backgroundColor: 'white',
             backgroundAttachment: 'fixed',
             backgroundPosition: 'center',
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
           }}>
           <Navigation />
+          <Banner />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/fixtures" element={<Fixtures />} />

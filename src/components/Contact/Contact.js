@@ -29,12 +29,6 @@ function Contact() {
     const contentToDisplay = () => {
         return (
             <>
-                <img src={'sean-wallpaper-2.jpg'}
-                    alt="Thurston Ranger pointing at you."
-                    style={{
-                        maxWidth: '100%',
-                        width: '100%'
-                    }} />
                 <Box sx={{
                     mr:
                         mobileView ? 2 : 6,

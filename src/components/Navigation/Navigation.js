@@ -102,16 +102,13 @@ function Navigation() {
 
         return (
             <Toolbar disableGutters="true">
-                <Typography variant="h5" sx={{
-                    // color: "#000000",
-                    color: 'white',
-                    marginLeft: 2,
-                }}>
-                    Thurston Rangers
-                </Typography>
+                <Box display="flex" justifyContent="flex-start" alignItems="flex-end" sx={{ flexGrow: 1, ml: 1 }}>
+                <img src="/favicon.ico" alt="Rangers Logo" height={45} display='flex'
+                    keepAspectRatio={true}  />
+                    </Box>
                 <Box display="flex" justifyContent="flex-end" alignItems="flex-end" sx={{ flexGrow: 1 }}>
                     <Button onClick={handleDrawerOpen}>
-                        <MenuIcon variant="contained" sx={{ color: "white" }} />
+                        <MenuIcon variant="contained" sx={{ color: "#000036" }} />
                         {/* <MenuIcon variant="contained" sx={{ color: "black" }} /> */}
                     </Button>
                     <Drawer
@@ -202,7 +199,7 @@ function Navigation() {
                         sx={{ display: { xs: 'flex' } }}>
                         <Button href="https://www.facebook.com/Thurston-RUFC-132633373430087" target="_blank" rel="noopener noreferrer"
                             sx={{
-                                "& :hover": { color: "black" }
+                                "& :hover": { color: "#3b5998" }
                             }}>
                             <FacebookIcon sx={{
                                 color: "black",
@@ -211,7 +208,7 @@ function Navigation() {
                         </Button>
                         <Button href="https://www.instagram.com/thurstonrangers/" target="_blank" rel="noopener noreferrer"
                             sx={{
-                                "& :hover": { color: "black" }
+                                "& :hover": { color: "#962fbf" }
                             }}>
                             <InstagramIcon
                                 className="InstagramIcon"
@@ -222,7 +219,7 @@ function Navigation() {
                         </Button>
                         <Button href="https://twitter.com/thurstonrangers" target="_blank" rel="noopener noreferrer"
                             sx={{
-                                "& :hover": { color: "black" }
+                                "& :hover": { color: "#00acee" }
                             }}>
                             <TwitterIcon
                                 className="TwitterIcon"
@@ -303,16 +300,17 @@ function Navigation() {
 
     return (
         <Box sx={{ flexGrow: 1  }}>
-            <AppBar position="static" className="AppBar"
+            <AppBar position="fixed" className="AppBar"
             // color='primary'
                 sx={{
                     backgroundColor:
-                    mobileView ? '#000036' : "#FFFFFF",
+                    mobileView ? '#FFFFFF' : "#FFFFFF",
                     // boxShadow:
                     // mobileView ? "inset 0px 0px 0px 0px #000069" : "inset 0px -4px 6px 0px #BEBEBE"
                 }}>
                 {mobileView ? displayMobile() : displayDesktop()}
             </AppBar>
+            <Toolbar />
         </Box>
     );
 }

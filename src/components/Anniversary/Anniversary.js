@@ -37,12 +37,6 @@ function Anniversary() {
     const contentToDisplay = () => {
         return (
             <>
-                <img src={'jack-wallpaper.jpg'}
-                    alt="Thurston Ranger scoring a try."
-                    style={{
-                        maxWidth: '100%',
-                        width: '100%'
-                    }} />
                 <Box sx={{
                     mr:
                         mobileView ? 2 : 6,

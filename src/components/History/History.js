@@ -28,12 +28,6 @@ function Contact() {
     const contentToDisplay = () => {
         return (
             <>
-                <img src={'harry-wallpaper.jpg'}
-                    alt="Thurston Ranger carrying the ball into contact."
-                    style={{
-                        maxWidth: '100%',
-                        width: '100%'
-                    }} />
                 <Box sx={{
                     mr:
                         mobileView ? 2 : 6,

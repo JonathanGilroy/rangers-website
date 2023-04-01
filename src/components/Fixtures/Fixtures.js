@@ -105,14 +105,6 @@ function Contact() {
   const contentToDisplay = () => {
     return (
       <>
-        <img
-          src={"jenks-wallpaper-2.jpg"}
-          alt="Thurston Ranger smiling running onto the pitch for kick off."
-          style={{
-            maxWidth: "100%",
-            width: "100%",
-          }}
-        />
         <Box
           sx={{
             mr: mobileView ? 1 : 6,
