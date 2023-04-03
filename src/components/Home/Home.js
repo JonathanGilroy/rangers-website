@@ -133,7 +133,7 @@ function Home() {
                         <Typography sx={{fontWeight: 'bold', mb: 2}}>Upcoming fixtures:</Typography>
                         <Typography variant={'h5'}>Rangers v Young Farmers</Typography>
                         <Typography sx={{}}>Robinson Field</Typography>
-                        <Typography sx={{}}>KO: 2pm, 7th April 2023</Typography>
+                        <Typography sx={{}}>KO: 5pm, 7th April 2023</Typography>
                     </CardContent>
                 </Card>
                 </Grid>
