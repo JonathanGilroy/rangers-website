@@ -106,10 +106,10 @@ function Navigation() {
                 <img src="/favicon.ico" alt="Rangers Logo" height={45} display='flex'
                     keepAspectRatio={true}  />
                     </Box>
+                    <Typography sx={{ color: "#000036" }} variant='h5' display='flex' alig='center'>Thurston RUFC</Typography>
                 <Box display="flex" justifyContent="flex-end" alignItems="flex-end" sx={{ flexGrow: 1 }}>
                     <Button onClick={handleDrawerOpen}>
                         <MenuIcon variant="contained" sx={{ color: "#000036" }} />
-                        {/* <MenuIcon variant="contained" sx={{ color: "black" }} /> */}
                     </Button>
                     <Drawer
                         {...{

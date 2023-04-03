@@ -46,7 +46,7 @@ function Events() {
                     <Typography align="center">
                         <h1>Events</h1>
                         <Typography align='justify'>
-                            <p>Please find our currently scheduled events below.</p>
+                            <p>Please find our currently scheduled events below:</p>
                         </Typography>
                     </Typography>
                     <Box sx={{ display: 'flex', flexDirection: 'column', mb: 4, mt: 5 }} alignItems='center'>
