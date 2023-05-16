@@ -1,21 +1,27 @@
 {
     "AnniversaryEvents": [
         {
-            "event": "Sevens Tournament and Hog Roast",
-            "date": "15 July 2023",
-            "description": "We're kicking off our 50th anniversary year celebrations with a sevens tournament in July. As if that wasn't good enough, we're also having a hog roast! So bring your friends and family down for a cracking day of rugby, food, drinks and laughs.",
+            "event": "Sevens Tournament and BBQ",
+            "date": "15th July 2023",
+            "description": "We're kicking off our 50th anniversary year celebrations with a sevens tournament in July. As if that wasn't good enough, we're also having a BBQ and music! So bring your friends and family down for a cracking day of rugby, food, drinks and laughs.",
             "contact": "thurstonrugbyclub@live.co.uk"
         },
         {
             "event": "Presidents XV v Thurston with Pre-Match Lunch",
-            "date": "02 September 2023",
+            "date": "19th August 2023",
             "description": "The club presidents finest 15 take on the Rangers in this special fixture. The match will be preceded by a lunch to get everyone ready for the big game.",
             "contact": "thurstonrugbyclub@live.co.uk"
         },
         {
             "event": "Sportsman's Dinner",
             "date": "20 April 2024",
-            "description": "Further details coming soon.",
+            "description": "Sportsmans dinner held at the clubhouse with guest speaker Jason Leonard.",
+            "contact": "thurstonrugbyclub@live.co.uk"
+        },
+        {
+            "event": "Anniversary Tour",
+            "date": "10th-13th May 2024",
+            "description": "To celebrate the 50th anniversary of the club, the club is going on tour to Ibiza for the beach rugby tournament.",
             "contact": "thurstonrugbyclub@live.co.uk"
         },
         {
